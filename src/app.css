@@ -5,7 +5,12 @@
 }
 
 .app {
-  height: 100vh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
-}/*# sourceMappingURL=app.css.map */
+}
+
+.app__main {
+  flex: 1;
+  min-width: 0;
+}

@@ -6,19 +6,21 @@ import img6 from '../../../assets/presentacion.jpg';
 import './home.css';
 const Home = () => {
   return (
-    <div className='home-container'>
-      <div className='container-4'>
-        <div className='container-4__img'>
-          <div className='container-4__text'>
-            <div>
-              <p>
-                La opción segura y confiable para tus necesidades de transporte
-              </p>
-            </div>
-          </div>
-          <img src={img6} alt='camion afuera del deposito' />
+    <div className='home'>
+      <section className='home-hero' aria-label='Presentación'>
+        <div className='home-hero__media'>
+          <img src={img6} alt='Camión afuera del depósito' />
+          <div className='home-hero__overlay' aria-hidden='true' />
         </div>
-      </div>
+
+        <div className='home-hero__content container'>
+          <div className='home-hero__stack'>
+            <h1 className='home-hero__title'>
+              La opción segura y confiable para tus necesidades de transporte
+            </h1>
+          </div>
+        </div>
+      </section>
       {/* <div className='container-1'>
         <div className='container-1-text'>
           <p className='container-1-text__title'>TRANSPORTE RICO HNOS</p>
@@ -36,26 +38,34 @@ const Home = () => {
         </div>
       </div> */}
 
-      <div className='container-2'>
-        <div className='container-2-text'>
-          <p>"Tu carga, nuestro compromiso: Transporte Rico Hnos."</p>
+      <section className='home-banner' aria-label='Mensaje'>
+        <div className='home-banner__media'>
+          <img src={img4} alt='Camión en ruta' />
+          <div className='home-banner__overlay' aria-hidden='true' />
         </div>
-        <div className='bg-dark'></div>
-        <div className='container-2-img'>
-          <img src={img4} alt='' />
+        <div className='home-banner__content container'>
+          <p className='home-banner__quote'>
+            "Tu carga, nuestro compromiso: Transporte Rico Hnos."
+          </p>
         </div>
-      </div>
-      <div className='container-3'>
-        <div className='container-3-text'>
-          <h3>¡QUEREMOS SABER DE USTED!</h3>
-          <p>Entre Rios 1938</p>
-          <p>(11) 5329-6741 / (11) 5615-4005</p>
-          <p>info@transportericohnos.com</p>
+      </section>
+
+      <section className='home-contact' aria-label='Contacto rápido'>
+        <div className='home-contact__inner container'>
+          <div className='home-contact__card'>
+            <h2 className='home-contact__title'>¡QUEREMOS SABER DE USTED!</h2>
+            <ul className='home-contact__list'>
+              <li>Entre Rios 1938</li>
+              <li>(11) 5329-6741 / (11) 5615-4005</li>
+              <li>info@transportericohnos.com</li>
+            </ul>
+          </div>
+
+          <div className='home-contact__media'>
+            <img src={img3} alt='Camión de la flota' />
+          </div>
         </div>
-        <div className='container-3-img'>
-          <img src={img3} alt='' />
-        </div>
-      </div>
+      </section>
     </div>
   );
 };

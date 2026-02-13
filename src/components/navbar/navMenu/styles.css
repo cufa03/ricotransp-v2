@@ -11,6 +11,7 @@
   text-decoration: none;
   color: hsl(244, 100%, 16%);
 }
+
 .navlinks__item:hover {
   color: hsla(0, 1%, 64%, 0.74);
 }
@@ -22,4 +23,4 @@
 .menu-icon {
   display: none;
   cursor: pointer;
-}/*# sourceMappingURL=styles.css.map */
+}

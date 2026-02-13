@@ -5,9 +5,11 @@ import ContactForm from '../../contactForm';
 
 const ContactUs = () => {
   return (
-    <div className="contact-form">
-      <ContactForm />
-    </div>
+    <section className='contact-page' aria-label='Contacto'>
+      <div className='contact-form container'>
+        <ContactForm />
+      </div>
+    </section>
   );
 };
 

@@ -1,11 +1,16 @@
-.contact-form {
+.contact-page {
   flex: 1;
+  padding: var(--space-7) 0;
+}
+
+.contact-form {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 @media screen and (max-width: 419px) {
-  .contact-form p {
-    font-size: 1.6rem;
+  .contact-page {
+    padding: var(--space-6) 0;
   }
-}/*# sourceMappingURL=styles.css.map */
+}

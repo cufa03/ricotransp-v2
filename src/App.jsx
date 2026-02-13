@@ -4,7 +4,6 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './components/pages/home/Home';
 import AboutSection from './components/pages/about';
 import OurTrucks from './components/pages/trucks';
-import Footer from './components/footer/index';
 import ContactUs from './components/pages/contact';
 import NewNavbar from './components/navbar/newNavbar';
 import NewFooter from './components/footer/NewFooter';
@@ -12,16 +11,24 @@ import NewFooter from './components/footer/NewFooter';
 function App() {
   return (
     <div className='app'>
-      {/* <Navbar /> */}
-      <NewNavbar />
-      <Routes>
-        <Route path='/' exact element={<Home />} />
-        <Route path='/trucks' exact element={<OurTrucks />}></Route>
-        <Route path='/about-section' exact element={<AboutSection />}></Route>
-        <Route path='/contact' exact element={<ContactUs />} />
-      </Routes>
-      <NewFooter />
-      {/* <Footer /> */}
+      <header className='app__header'>
+        {/* <Navbar /> */}
+        <NewNavbar />
+      </header>
+
+      <main className='app__main'>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/trucks' element={<OurTrucks />} />
+          <Route path='/about-section' element={<AboutSection />} />
+          <Route path='/contact' element={<ContactUs />} />
+        </Routes>
+      </main>
+
+      <footer className='app__footer'>
+        <NewFooter />
+        {/* <Footer /> */}
+      </footer>
     </div>
   );
 }

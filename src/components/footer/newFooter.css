@@ -1,72 +1,108 @@
 .footer {
   width: 100%;
-  background-color: #000000;
-  color: #ffffff;
-  padding: 2rem 0 1rem 0;
+  background: rgba(15, 23, 32, 0.72);
+  color: var(--color-text);
+  padding: var(--space-6) 0 var(--space-4);
+  border-top: 1px solid var(--color-border);
 }
+
 .footer .footer__container__top {
-  background-color: inherit;
-  width: 85%;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
-  gap: 1rem;
+  gap: var(--space-4);
 }
+
 .footer .footer__container__top .footer__icon--xxlarge {
-  font-size: xx-large;
+  font-size: 1.6rem;
+  color: var(--color-accent-2);
 }
+
 .footer .footer__container__top .footer__icon--xlarge {
-  font-size: x-large;
+  font-size: 1.25rem;
+  color: rgba(202, 165, 91, 0.9);
 }
+
 .footer .footer__container__top p {
-  font-size: 1.1rem;
+  font-size: 0.95rem;
 }
+
 .footer .footer__container__top .footer__info {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: var(--space-3);
 }
+
 .footer .footer__container__top .footer__info .footer__info__title {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: var(--space-3);
 }
+
 .footer .footer__container__top .footer__info .footer__info__title p {
-  font-size: x-large;
+  font-size: 1.05rem;
   font-weight: bold;
-  letter-spacing: 0.15rem;
-  color: #f06106;
+  letter-spacing: 0.12em;
+  color: var(--color-accent-2);
 }
+
 .footer .footer__container__top .footer__info .footer__info__description {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: var(--space-2);
 }
+
 .footer .footer__container__top .footer__info .footer__info__description .footer__info__description__item {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: var(--space-3);
 }
+
 .footer .footer__container__top .footer__info .footer__info__description .footer__info__description__item .footer__info__description__item__title {
   font-weight: bold;
+  color: var(--color-text);
 }
+
+.footer .footer__container__top .footer__info .footer__info__description .footer__info__description__item p {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.footer .footer__work__time h3 {
+  margin: 0 0 var(--space-1);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: var(--color-accent-2);
+}
+
+.footer .footer__work__time p {
+  margin: 0;
+  color: var(--color-muted);
+}
+
 .footer .bottom__line {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2862745098);
-  margin: 1rem 0;
+  border-bottom: 1px solid var(--color-border);
+  margin: var(--space-4) 0;
 }
+
 .footer .footer__container__bottom {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: rgba(242, 240, 234, 0.7);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
 }
 
 @media only screen and (min-width: 640px) {
   .footer__container__top {
     flex-direction: row !important;
   }
+
   .footer__container__top .footer__info .footer__info__description {
-    margin-left: 2.5rem;
+    margin-left: var(--space-6);
   }
-}/*# sourceMappingURL=newFooter.css.map */
+}

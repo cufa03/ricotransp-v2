@@ -21,7 +21,7 @@ const ContactForm = () => {
         'service_0xhs34c',
         'template_8gss1dm',
         formi.current,
-        '4q7xBqPHPqH0AlCG0'
+        '4q7xBqPHPqH0AlCG0',
       )
       .then(
         (result) => {
@@ -31,7 +31,7 @@ const ContactForm = () => {
         },
         (error) => {
           console.log(error.text);
-        }
+        },
       );
   };
   return (
@@ -76,25 +76,58 @@ const ContactForm = () => {
     // 		<button type="submit"> Enviar </button>
     // 	</form>
     // </div>
-    <form ref={formi} onSubmit={sendEmail}>
-      {/* <label>Name</label> */}
-      <p>
+    <form className='contact-form__form' ref={formi} onSubmit={sendEmail}>
+      <p className='contact-form__title'>
         Comunicate con <span>Nosotros</span>
       </p>
-      <input type="text" name="user_name" placeholder="Ingrese su nombre" />
-      {/* <label>Email</label> */}
-      <input type="email" name="user_email" placeholder="ejemplo@gmail.com" />
-      <input type="phone" name="user_phone" placeholder="+54 11 12345678" />
-      {/* <label>Message</label> */}
-      <textarea
-        name="message"
-        id=""
-        cols="30"
-        rows="1"
-        placeholder="Escriba su consulta aquí..."
-      />
-      {/* <input type="submit" value="Send" /> */}
-      <button type="submit" value="Send">
+
+      <div className='contact-form__fields'>
+        <label className='sr-only' htmlFor='contact-name'>
+          Nombre
+        </label>
+        <input
+          id='contact-name'
+          type='text'
+          name='user_name'
+          placeholder='Ingrese su nombre'
+          autoComplete='name'
+        />
+
+        <label className='sr-only' htmlFor='contact-email'>
+          Email
+        </label>
+        <input
+          id='contact-email'
+          type='email'
+          name='user_email'
+          placeholder='ejemplo@gmail.com'
+          autoComplete='email'
+        />
+
+        <label className='sr-only' htmlFor='contact-phone'>
+          Teléfono
+        </label>
+        <input
+          id='contact-phone'
+          type='tel'
+          name='user_phone'
+          placeholder='+54 11 12345678'
+          autoComplete='tel'
+        />
+
+        <label className='sr-only' htmlFor='contact-message'>
+          Mensaje
+        </label>
+        <textarea
+          id='contact-message'
+          name='message'
+          cols='30'
+          rows='4'
+          placeholder='Escriba su consulta aquí...'
+        />
+      </div>
+
+      <button className='contact-form__button' type='submit' value='Send'>
         Enviar
       </button>
     </form>

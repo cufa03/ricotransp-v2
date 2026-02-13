@@ -9,9 +9,6 @@ const AboutSection = () => {
         <div className='about_img__container1'>
           <img alt='Ford working truck' src={image} />
         </div>
-        <div className='about_img__container2'>
-          <img alt='Ford working truck' src={image} />
-        </div>
       </div>
 
       <div className='about__description'>
@@ -45,9 +42,13 @@ const AboutSection = () => {
         <p className='title'>VALORES</p>
         <p className='text__description'>
           En{' '}
-          <a href='#' data-tool-tip='Lideres en el mercado '>
+          <button
+            type='button'
+            className='tooltip-link'
+            data-tool-tip='Lideres en el mercado '
+          >
             Transporte Rico Hnos
-          </a>{' '}
+          </button>{' '}
           compartimos los siguientes valores que nos guían diariamente hacia la
           total satisfacción de nuestros clientes y que constituyen nuestra
           carta de navegación. Estos son algunos de los valores que constituyen
@@ -70,7 +71,8 @@ const AboutSection = () => {
           requerimientos de la Norma ISO 9001, versión vigente.
         </p>
       </div>
-      <div className='about_img__container3'>
+
+      <div className='about_img__container2'>
         <img alt='Ford working truck' src={image} />
       </div>
     </div>

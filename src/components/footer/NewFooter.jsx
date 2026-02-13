@@ -8,7 +8,7 @@ import { AiOutlineMail } from 'react-icons/ai';
 const NewFooter = () => {
   return (
     <div className='footer'>
-      <div className='footer__container__top'>
+      <div className='footer__container__top container'>
         <div className='footer__info'>
           <div className='footer__info__title'>
             <BsHouse className='footer__icon--xxlarge' />
@@ -44,7 +44,7 @@ const NewFooter = () => {
         </div>
       </div>
       <div className='bottom__line' />
-      <div className='footer__container__bottom'>
+      <div className='footer__container__bottom container'>
         <p>Rico Hnos Transporte</p>
       </div>
     </div>

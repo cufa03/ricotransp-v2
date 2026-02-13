@@ -12,6 +12,7 @@
   font-weight: bold;
   font-size: large;
 }
+
 .sucursal .sucursal__icon {
   font-size: x-large;
   margin-right: 0.5rem;
@@ -23,25 +24,31 @@
   margin: 0.2rem 1.7rem 0 1.7rem;
   line-height: 1.5em;
 }
+
 .sucursal__info__container .sucursal__info {
   display: flex;
   flex-direction: column;
 }
+
 .sucursal__info__container .sucursal__info p {
   margin: 0 0.5rem;
 }
+
 .sucursal__info__container .sucursal__info .sucursal__nombre {
   font-weight: bold;
   margin-bottom: 0.3rem;
 }
+
 .sucursal__info__container .sucursal__info .sucursal__info__description {
   display: flex;
 }
+
 @media only screen and (max-width: 1150px) {
   .sucursal__info__container .sucursal__info .sucursal__info__description {
     flex-direction: column;
   }
 }
+
 .footer__top {
   display: flex;
   flex-direction: column;
@@ -64,17 +71,20 @@
   .footer__top {
     padding: 1rem;
   }
+
   .footer__top .sucursal__info__container {
     flex-direction: column;
     gap: 5px;
     margin: 0.3rem 0;
   }
+
   .footer__top .sucursal__info__container .time-info {
     display: flex;
     gap: 6px;
     padding-left: 0.5rem;
   }
+
   .footer__bottom {
     text-align: center;
   }
-}/*# sourceMappingURL=footer.css.map */
+}
