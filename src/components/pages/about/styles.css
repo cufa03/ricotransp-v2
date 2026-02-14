@@ -5,7 +5,7 @@
   max-width: var(--container-max);
   margin: var(--space-6) auto;
   padding: 0 var(--container-pad) var(--space-7);
-  padding-left: 0;
+  /* padding-left: 0; */
   position: relative;
   align-items: start;
 }
@@ -124,7 +124,7 @@
   }
 
   .about__container .about__description {
-    margin-left: var(--container-pad);
+    /* margin-left: var(--container-pad); */
   }
 }
 

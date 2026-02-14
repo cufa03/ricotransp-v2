@@ -106,3 +106,31 @@
     margin-left: var(--space-6);
   }
 }
+
+/* Mobile typography only (<= 640px) */
+@media only screen and (max-width: 640px) {
+  .footer .footer__container__top p {
+    font-size: 0.875rem;
+    line-height: 1.25;
+  }
+
+  .footer .footer__container__top .footer__info .footer__info__title p {
+    font-size: 0.65rem;
+    line-height: 1.2;
+  }
+
+  .footer .footer__work__time h3 {
+    font-size: 0.55rem;
+    line-height: 1.2;
+  }
+
+  .footer .footer__container__bottom {
+    font-size: 0.55rem;
+    line-height: 1.2;
+  }
+
+  .footer .footer__container__top .footer__info .footer__info__description .footer__info__description__item p {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+}
