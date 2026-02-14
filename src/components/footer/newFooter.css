@@ -21,7 +21,14 @@
 
 .footer .footer__container__top .footer__icon--xlarge {
   font-size: 1.25rem;
-  color: rgba(202, 165, 91, 0.9);
+  /* color: #caa55be6; */
+  color: var(--color-accent-2);
+}
+
+.footer .footer__container__top .footer__icon--large {
+  font-size: 1.125rem;
+  /* color: #caa55be6; */
+  color: var(--color-accent-2);
 }
 
 .footer .footer__container__top p {
@@ -115,7 +122,7 @@
   }
 
   .footer .footer__container__top .footer__info .footer__info__title p {
-    font-size: 0.65rem;
+    font-size: 0.90rem;
     line-height: 1.2;
   }
 

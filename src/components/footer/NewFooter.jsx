@@ -11,24 +11,24 @@ const NewFooter = () => {
       <div className='footer__container__top container'>
         <div className='footer__info'>
           <div className='footer__info__title'>
-            <BsHouse className='footer__icon--xxlarge' />
+            <BsHouse className='footer__icon--xlarge' />
             <p>SUCURSAL</p>
           </div>
           <div className='footer__info__description'>
             <div className='footer__info__description__item'>
-              <BiMap className='footer__icon--xlarge' />
+              <BiMap className='footer__icon--large' />
               <p className='footer__info__description__item__title'>
                 Dirección:
               </p>
               <p>Entre Ríos 1839.</p>
             </div>
             <div className='footer__info__description__item'>
-              <AiOutlineMail className='footer__icon--xlarge' />
+              <AiOutlineMail className='footer__icon--large' />
               <p className='footer__info__description__item__title'>Email:</p>
               <p>info@transportericohnos.com</p>
             </div>
             <div className='footer__info__description__item'>
-              <BsTelephone className='footer__icon--xlarge' />
+              <BsTelephone className='footer__icon--large' />
               <p className='footer__info__description__item__title'>
                 Telefono:
               </p>

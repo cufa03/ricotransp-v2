@@ -119,6 +119,7 @@
 
 @media screen and (max-width: 1024px) {
   .about__container {
+    /* padding: 0 0 3rem 0; */
     padding-bottom: 3rem;
     width: 100%;
   }
@@ -159,11 +160,24 @@
 }
 
 @media screen and (max-width: 419px) {
+  .about__container {
+    padding: 0 0 3rem 0;
+  }
+
   .about__description {
-    padding: 2rem !important;
+    width: 95% !important;
+    padding: 1rem !important;
+    margin: auto !important;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 
   .about__description .title {
     font-size: 24px !important;
+  }
+
+  .about__container .about__description h2 {
+    font-size: 1.9rem;
   }
 }
