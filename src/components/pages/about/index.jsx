@@ -1,5 +1,6 @@
 import React from 'react';
 import image from '../../../assets/truck.png';
+// import image from '../../../assets/truck-solo.png';
 import './styles.css';
 
 const AboutSection = () => {
